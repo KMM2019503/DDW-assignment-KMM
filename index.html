@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDC Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="script.js" defer></script>
+    <script src="./js/home.js" defer></script>
+  </head>
+  <body class="over-flow-hidden">
+    <header>
+      <nav class="nav" id="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" id="page-name-holder">
+          <img
+            id="logo"
+            src="./public/sdc-high-resolution-logo-transparent.png"
+            alt=""
+          />
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li>
+            <a href="index.html" class="page-link active">Home</a>
+          </li>
+          <li>
+            <a href="rasing_desk.html" class="page-link">Rising Desks</a>
+          </li>
+          <li><a href="contact.html" class="page-link">Contact Us</a></li>
+          <li><a href="health.html" class="page-link">Health Benefits</a></li>
+          <li><a href="basket.html" class="page-link">Basket</a></li>
+        </ul>
+
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Modal -->
+    <div class="black-bc" id="modal-bg"></div>
+    <div class="modal" id="modal">
+      <div class="container">
+        <button id="modal-close-btn" onclick="handleCloseModal()">
+          <img src="./public/icon/Circled-X-256.png" alt="" />
+        </button>
+        <p>
+          <strong class="strong">Hello!</strong> welcome to
+          <strong class="strong">SDC</strong>
+        </p>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <h3>Welcome To Our Website</h3>
+        <h1>Standard Desk Company</h1>
+        <div class="btn-container">
+          <a class="btn">LEARN MORE ABOUT SHOPPING</a>
+        </div>
+      </div>
+    </section>
+    <!-- Marketing Section -->
+    <section id="marketing-section">
+      <div class="container">
+        <!-- tag say goodbye -->
+        <div class="marketing-tag first">
+          <div class="content">
+            <h3 class="mak-header">Say goodbye</h3>
+            <p class="content-detail">
+              Say goodbye to sedentary workdays and embrace the power of
+              movement! Our standing desks are designed to elevate not just your
+              screen but your entire work experience.
+            </p>
+            <div class="btn-container">
+              <a class="btn">SEE MORE PRODUCT LISTS</a>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              class="photo"
+              src="./public/mak-first-tag-photo.jpg"
+              id="mak-first-image"
+            />
+          </div>
+        </div>
+        <!-- tag say goodbye end -->
+
+        <!-- tag adjuct  -->
+
+        <div class="marketing-tag">
+          <div class="image">
+            <img class="" src="./public/mak-second-tag-photo.jpg" />
+          </div>
+          <div class="content">
+            <h3 class="mak-header">Seamless Adjustability</h3>
+            <p class="content-detail">
+              Customize your desk height with ease, promoting better posture and
+              reducing the risk of back pain. Whether you're typing up reports
+              or attending virtual meetings, find the perfect height for optimal
+              productivity.
+            </p>
+            <div class="btn-container">
+              <a class="btn">LEARN MORE FEATURES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promotion Products section -->
+    <section id="promotion-section">
+      <div class="container">
+        <div class="image-holder">
+          <input type="radio" name="slider" id="s1" checked />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+
+          <label for="s1" id="slide1"
+            ><img
+              src="./public/products/2/vivo-electric-height-adjustable-desk.jpg"
+              alt=""
+          /></label>
+          <label for="s2" id="slide2"
+            ><img src="./public/products/2/photo-2.jpg" alt=""
+          /></label>
+          <label for="s3" id="slide3"
+            ><img src="./public/products/2/photo-3.jpg" alt=""
+          /></label>
+          <label for="s4" id="slide4"
+            ><img src="./public/products/2/photo-4.jpg" alt=""
+          /></label>
+          <label for="s5" id="slide5"
+            ><img src="public/products/2/photo-5.jpg" alt=""
+          /></label>
+        </div>
+
+        <div class="content">
+          <h2>Most sale products</h2>
+          <h3>VIVO Electric Height Adjustable Desk</h3>
+          <p>$874</p>
+          <h5>$600</h5>
+          <div class="btn-container">
+            <a class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Section -->
+    <section id="health-section">
+      <div class="container">
+        <div class="content">
+          <h2>Benefits of Standing Desk</h2>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using
+            a standing desk can offer health benefits such as reduced sedentary
+            risks, improved posture, increased energy, potential weight
+            management, better blood sugar control, and enhanced cardiovascular
+            health. The flexibility to alternate between sitting and standing
+            promotes a dynamic work environment and may boost productivity.
+            However, it's important to introduce standing gradually and seek
+            professional advice for specific health concerns.
+          </p>
+          <div class="btn-container">
+            <a class="btn">See More</a>
+          </div>
+        </div>
+        <div class="image-holder">
+          <img src="./public/health-section-photo.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><img src="./public/icon/Facebook-256.png" alt="" /></a>
+          <a href="#"><img src="./public/icon/Instagram-256.png" alt="" /></a>
+          <a href="#"><img src="./public/icon/Twitter-256.png" alt="" /></a>
+          <a href="#"
+            ><img src="./public/icon/Phone-Telephone-256.png" alt=""
+          /></a>
+        </div>
+
+        <div class=".text-container">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-img-holder">
+          <img
+            src="./public/footer-photo-ai-brush-removebg-s4fp1gu.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

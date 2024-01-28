@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDC Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="script.js" defer></script>
+    <script src="./js/cotact.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav" id="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" id="page-name-holder">
+          <img
+            id="logo"
+            src="./public/sdc-high-resolution-logo-transparent.png"
+            alt=""
+          />
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li>
+            <a href="index.html" class="page-link active">Home</a>
+          </li>
+          <li>
+            <a href="rasing_desk.html" class="page-link">Rising Desks</a>
+          </li>
+          <li><a href="contact.html" class="page-link">Contact Us</a></li>
+          <li><a href="health.html" class="page-link">Health Benefits</a></li>
+          <li><a href="basket.html" class="page-link">Basket</a></li>
+        </ul>
+
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+          <i class="uil uil-search search-icon"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+      </nav>
+    </header>
+    <section id="main-section">
+      <div class="container">
+        <div class="text-holder">
+          <h2>Write us</h2>
+          <form action="#">
+            <div class="input-container">
+              <input type="text" required />
+              <label for="">First Name</label>
+            </div>
+            <div class="input-container">
+              <input type="text" required />
+              <label for="">Last Name</label>
+            </div>
+            <div class="input-container textarea">
+              <textarea required></textarea>
+              <br />
+              <label for="">Write your message</label>
+              <br />
+            </div>
+            <button id="submit-btn" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="sperate"></div>
+        <div class="image-holder">
+          <img src="./public/contact-page-photo.png" alt="" />
+        </div>
+      </div>
+      <!-- shodow -->
+      <div id="shadow" class="shadow"></div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><img src="./public/icon/Facebook-256.png" alt="" /></a>
+          <a href="#"><img src="./public/icon/Instagram-256.png" alt="" /></a>
+          <a href="#"><img src="./public/icon/Twitter-256.png" alt="" /></a>
+          <a href="#"
+            ><img src="./public/icon/Phone-Telephone-256.png" alt=""
+          /></a>
+        </div>
+
+        <div class=".text-container">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-img-holder">
+          <img
+            src="./public/footer-photo-ai-brush-removebg-s4fp1gu.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
