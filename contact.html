@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SDC Home Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -20,11 +18,7 @@
       <nav class="nav" id="nav">
         <i class="uil uil-bars navOpenBtn"></i>
         <a href="#" id="page-name-holder">
-          <img
-            id="logo"
-            src="./public/sdc-high-resolution-logo-transparent.png"
-            alt=""
-          />
+          <img id="logo" src="./public/sdc_logo_final version.png" alt="" />
         </a>
 
         <ul class="nav-links" id="nav-links">
@@ -47,61 +41,101 @@
         </div>
       </nav>
     </header>
-    <section id="main-section">
-      <div class="container">
-        <div class="text-holder">
-          <h2>Write us</h2>
-          <form action="#">
-            <div class="input-container">
-              <input type="text" required />
-              <label for="">First Name</label>
-            </div>
-            <div class="input-container">
-              <input type="text" required />
-              <label for="">Last Name</label>
-            </div>
-            <div class="input-container textarea">
-              <textarea required></textarea>
-              <br />
-              <label for="">Write your message</label>
-              <br />
-            </div>
-            <button id="submit-btn" class="btn">Submit</button>
-          </form>
+    <div id="contact-page">
+      <section id="main-section">
+        <div class="container">
+          <div class="text-holder">
+            <h2>Write us</h2>
+            <form action="#">
+              <div class="input-container">
+                <input type="text" required />
+                <label for="">First Name</label>
+              </div>
+              <div class="input-container">
+                <input type="text" required />
+                <label for="">Last Name</label>
+              </div>
+              <div class="input-container textarea">
+                <textarea required></textarea>
+                <br />
+                <label for="">Write your message</label>
+                <br />
+              </div>
+              <button id="submit-btn" class="btn">Submit</button>
+            </form>
+          </div>
+          <div class="sperate"></div>
+          <div class="image-holder">
+            <img
+              src="./public/contact-page-photo.png"
+              alt=""
+              class="contact-page-photo"
+            />
+          </div>
         </div>
-        <div class="sperate"></div>
-        <div class="image-holder">
-          <img src="./public/contact-page-photo.png" alt="" />
-        </div>
-      </div>
-      <!-- shodow -->
-      <div id="shadow" class="shadow"></div>
-    </section>
-    <!-- footer -->
+        <!-- shodow -->
+        <div id="shadow" class="shadow"></div>
+      </section>
+    </div>
+
     <footer>
       <div class="footer">
-        <div class="row">
-          <a href="#"><img src="./public/icon/Facebook-256.png" alt="" /></a>
-          <a href="#"><img src="./public/icon/Instagram-256.png" alt="" /></a>
-          <a href="#"><img src="./public/icon/Twitter-256.png" alt="" /></a>
-          <a href="#"
-            ><img src="./public/icon/Phone-Telephone-256.png" alt=""
-          /></a>
-        </div>
+        <div class="link-content">
+          <div class="row">
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Send-Email-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Facebook-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Instagram-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Twitter-256.png"
+                alt=""
+            /></a>
+          </div>
 
-        <div class=".text-container">
-          <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-          </ul>
+          <div class="text-container">
+            <h2>Quick Link</h2>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shop Now</a></li>
+              <li><a href="#">Quality</a></li>
+            </ul>
+          </div>
+          <div class="location-container">
+            <h2>Location & Phone number</h2>
+            <div class="location-content">
+              <p>
+                <a href=""
+                  ><img
+                    class="footer-icon"
+                    src="./public/icon/Google-Maps-256.png"
+                    alt=""
+                /></a>
+                No(40)/33st St/Downtown/Yangon/Myanmar
+              </p>
+              <p>+9123456789</p>
+              <p>+9876543221</p>
+            </div>
+          </div>
         </div>
         <div class="footer-img-holder">
-          <img
-            src="./public/footer-photo-ai-brush-removebg-s4fp1gu.png"
-            alt=""
-          />
+          <img src="./public/footer_img.png" alt="" />
         </div>
       </div>
     </footer>

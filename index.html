@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SDC Home Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -15,16 +13,12 @@
     <script src="script.js" defer></script>
     <script src="./js/home.js" defer></script>
   </head>
-  <body class="over-flow-hidden">
+  <body class="over-flow-hidden" id="home-page">
     <header>
       <nav class="nav" id="nav">
         <i class="uil uil-bars navOpenBtn"></i>
         <a href="#" id="page-name-holder">
-          <img
-            id="logo"
-            src="./public/sdc-high-resolution-logo-transparent.png"
-            alt=""
-          />
+          <img id="logo" src="./public/sdc_logo_final version.png" alt="" />
         </a>
 
         <ul class="nav-links" id="nav-links">
@@ -39,10 +33,14 @@
           <li><a href="health.html" class="page-link">Health Benefits</a></li>
           <li><a href="basket.html" class="page-link">Basket</a></li>
         </ul>
+        <img
+          src="./public/icon/Search-256.png"
+          alt=""
+          class="search-icon"
+          id="searchIcon"
+        />
 
-        <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
-          <i class="uil uil-search search-icon"></i>
           <input type="text" placeholder="Search here..." />
         </div>
       </nav>
@@ -62,22 +60,63 @@
       </div>
     </div>
     <!-- Hero Section -->
-    <section id="hero">
-      <div class="container">
-        <h3>Welcome To Our Website</h3>
-        <h1>Standard Desk Company</h1>
-        <div class="btn-container">
-          <a class="btn">LEARN MORE ABOUT SHOPPING</a>
-        </div>
-      </div>
+    <section id="hero" data-carousel>
+      <button class="hero-button prev" data-carousel-button="prev">
+        <img src="./public/icon/Left-Arrow-256.png" alt="" />
+      </button>
+      <button class="hero-button next" data-carousel-button="next">
+        <img src="./public/icon/Right-Arrow-hero-256.png" alt="" />
+      </button>
+      <ul data-slides>
+        <li id="hero-1" class="slide hero-1">
+          <div class="content">
+            <h1>Elevate Your Workday with Our Stylish Standing Desks.</h1>
+            <div class="btn-container">
+              <a class="btn">LEARN MORE ABOUT SHOPPING</a>
+            </div>
+          </div>
+        </li>
+        <li id="hero-2" class="slide hero-2" data-active>
+          <div class="content transtion" data-hero-content>
+            <h1>
+              Transform Your Office Experience Healthier, Happier, and More
+              Productive.
+            </h1>
+            <div class="btn-container">
+              <a class="btn">LEARN MORE ABOUT SHOPPING</a>
+            </div>
+          </div>
+        </li>
+        <li id="hero-3" class="slide hero-3">
+          <div class="content">
+            <h1>Take a Stand for Your Health Explore Our Collection Today!</h1>
+            <div class="btn-container">
+              <a class="btn">LEARN MORE ABOUT SHOPPING</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- <li>
+          <div class="hero">
+            <div class="container">
+              <h3>Welcome To Our Website</h3>
+              <h1>Standard Desk Company</h1>
+              <div class="btn-container">
+                <a class="btn">LEARN MORE ABOUT SHOPPING</a>
+              </div>
+            </div>
+          </div>
+        </li> -->
+      </ul>
     </section>
+
     <!-- Marketing Section -->
     <section id="marketing-section">
       <div class="container">
         <!-- tag say goodbye -->
         <div class="marketing-tag first">
           <div class="content">
-            <h3 class="mak-header">Say goodbye</h3>
+            <h2 class="mak-header">Say goodbye</h2>
             <p class="content-detail">
               Say goodbye to sedentary workdays and embrace the power of
               movement! Our standing desks are designed to elevate not just your
@@ -104,7 +143,7 @@
             <img class="" src="./public/mak-second-tag-photo.jpg" />
           </div>
           <div class="content">
-            <h3 class="mak-header">Seamless Adjustability</h3>
+            <h2 class="mak-header">Seamless Adjustability</h2>
             <p class="content-detail">
               Customize your desk height with ease, promoting better posture and
               reducing the risk of back pain. Whether you're typing up reports
@@ -186,28 +225,62 @@
     <!-- footer -->
     <footer>
       <div class="footer">
-        <div class="row">
-          <a href="#"><img src="./public/icon/Facebook-256.png" alt="" /></a>
-          <a href="#"><img src="./public/icon/Instagram-256.png" alt="" /></a>
-          <a href="#"><img src="./public/icon/Twitter-256.png" alt="" /></a>
-          <a href="#"
-            ><img src="./public/icon/Phone-Telephone-256.png" alt=""
-          /></a>
-        </div>
+        <div class="link-content">
+          <div class="row">
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Send-Email-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Facebook-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Instagram-256.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-icon"
+                src="./public/icon/Twitter-256.png"
+                alt=""
+            /></a>
+          </div>
 
-        <div class=".text-container">
-          <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-          </ul>
+          <div class="text-container">
+            <h2>Quick Link</h2>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Shop Now</a></li>
+              <li><a href="#">Quality</a></li>
+            </ul>
+          </div>
+          <div class="location-container">
+            <h2>Location & Phone number</h2>
+            <div class="location-content">
+              <p>
+                <a href=""
+                  ><img
+                    class="footer-icon"
+                    src="./public/icon/Google-Maps-256.png"
+                    alt=""
+                /></a>
+                No(40)/33st St/Downtown/Yangon/Myanmar
+              </p>
+              <p>+9123456789</p>
+              <p>+9876543221</p>
+            </div>
+          </div>
         </div>
         <div class="footer-img-holder">
-          <img
-            src="./public/footer-photo-ai-brush-removebg-s4fp1gu.png"
-            alt=""
-          />
+          <img src="./public/footer_img.png" alt="" />
         </div>
       </div>
     </footer>
