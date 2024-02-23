@@ -23,8 +23,8 @@ body.over-flow-hidden {
 }
 #page-name-holder {
   text-decoration: none;
-  max-width: 100px;
-  max-height: 50px;
+  width: 60px;
+  height: 60px;
 }
 #logo {
   object-fit: contain;
@@ -145,23 +145,36 @@ body.over-flow-hidden {
 }
 .nav-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.menu-holder {
+  width: 60px;
+  height: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 #searchIcon,
 #menuIcon {
   width: 25px;
+  height: 25px;
 }
 
 .action-holder {
   margin: 0 5px;
   width: 25px;
-  background: white;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   cursor: pointer;
   #account-action {
     width: 20px;
+    height: auto;
   }
   .dropdown-content {
     display: none;
@@ -1563,7 +1576,9 @@ body.over-flow-hidden {
   #navCloseBtn {
     width: 20px;
   }
-
+  .menu-holder {
+    display: flex;
+  }
   .dropdown-content {
     right: 20px;
   }
@@ -1571,7 +1586,6 @@ body.over-flow-hidden {
   .nav {
     padding: 15px 20px;
     backdrop-filter: none;
-    /* background-color: transparent; */
   }
   .nav.add-background {
     background-color: #000000;
