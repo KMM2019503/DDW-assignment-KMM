@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const pageLinks = document.querySelectorAll(".page-link");
   const currentUrl = window.location.href;
   const fileName = currentUrl.split("/").pop();
+  const nav2 = document.getElementById("nav");
 
   for (const link of pageLinks) {
     const linkHref = link.getAttribute("href");
@@ -18,7 +19,26 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = link.getAttribute("href");
     });
   }
-  // navigation process end
+  function throttle(callback, delay) {
+    let lastTime = 0;
+    return function () {
+      const currentTime = new Date();
+      if (currentTime - lastTime >= delay) {
+        callback.apply(null, arguments);
+        lastTime = currentTime;
+      }
+    };
+  }
+
+  function handleScroll() {
+    const scrollValue = window.scrollY;
+    if (scrollValue >= 30) {
+      nav2.classList.add("change-background");
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
 });
 
 const nav = document.querySelector(".nav"),

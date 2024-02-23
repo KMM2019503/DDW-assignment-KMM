@@ -32,9 +32,6 @@ body.over-flow-hidden {
   max-height: 60px;
 }
 
-.add-background-laptop #page-name {
-  color: #fff;
-}
 .nav {
   z-index: 100;
   position: fixed;
@@ -48,8 +45,8 @@ body.over-flow-hidden {
   transition: all 1s ease;
 }
 
-.nav.add-background-laptop {
-  background-color: #000000;
+.nav.change-background {
+  background-color: #222222;
   transition: all 1s ease;
 }
 .nav,
@@ -146,7 +143,8 @@ body.over-flow-hidden {
   color: #434343;
   transform: translateY(-50%);
 }
-#searchIcon {
+#searchIcon,
+#menuIcon {
   width: 25px;
 }
 
@@ -167,7 +165,7 @@ body.over-flow-hidden {
 
 /* Footer */
 .footer {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: #222222;
   padding: 10px 0px;
   display: grid;
   grid-template-columns: auto auto;
@@ -1505,7 +1503,7 @@ body.over-flow-hidden {
     max-width: 400px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 520px) {
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
@@ -1535,7 +1533,7 @@ body.over-flow-hidden {
     row-gap: 30px;
     flex-direction: column;
     backdrop-filter: blur(20px);
-    background: transparent;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-blend-mode: multiply;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
@@ -1750,6 +1748,13 @@ body.over-flow-hidden {
       }
     }
 
+    #health-section .container .image-holder {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     #health-section .container .image-holder img {
       max-width: 300px;
     }
@@ -1957,9 +1962,12 @@ body.over-flow-hidden {
     }
 
     #main-section {
+      padding-top: 90px;
       .container {
         margin: 0;
         margin-bottom: 0px;
+        padding: 0px;
+
         display: block;
         .grid-item {
           margin: 20px auto;
@@ -1969,10 +1977,10 @@ body.over-flow-hidden {
     }
     #main-section .container .grid-item {
       margin: 0 auto 10px auto;
-      width: 300px;
+      width: 100%;
     }
     #main-section .container .grid-item .contact {
-      width: 300px;
+      width: 100%;
     }
     #main-section .container .grid-item .contact .detail {
       margin: 15px 0;
