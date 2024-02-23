@@ -143,9 +143,61 @@ body.over-flow-hidden {
   color: #434343;
   transform: translateY(-50%);
 }
+.nav-icons {
+  display: flex;
+}
 #searchIcon,
 #menuIcon {
   width: 25px;
+}
+
+.action-holder {
+  margin: 0 5px;
+  width: 25px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  #account-action {
+    width: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 7px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: left;
+    img {
+      width: 15px;
+      height: auto;
+    }
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
 }
 
 .search-box input {
@@ -1508,6 +1560,14 @@ body.over-flow-hidden {
   .nav .navCloseBtn {
     display: block;
   }
+  #navCloseBtn {
+    width: 20px;
+  }
+
+  .dropdown-content {
+    right: 20px;
+  }
+
   .nav {
     padding: 15px 20px;
     backdrop-filter: none;

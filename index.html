@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SDC Home Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+
     <script src="script.js" defer></script>
     <script src="./js/home.js" defer></script>
   </head>
@@ -27,7 +24,12 @@
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
+          <img
+            src="./public/icon/Circled-X-256.png"
+            alt=""
+            class="uil uil-times navCloseBtn"
+            id="navCloseBtn"
+          />
           <li>
             <a href="index.html" class="page-link active">Home</a>
           </li>
@@ -38,12 +40,37 @@
           <li><a href="health.html" class="page-link">Health Benefits</a></li>
           <li><a href="basket.html" class="page-link">Basket</a></li>
         </ul>
-        <img
-          src="./public/icon/Search-256.png"
-          alt=""
-          class="search-icon"
-          id="searchIcon"
-        />
+        <div class="nav-icons">
+          <img
+            src="./public/icon/Search-256.png"
+            alt=""
+            class="search-icon"
+            id="searchIcon"
+          />
+          <div class="action-holder">
+            <img
+              onclick="toggleDropdown()"
+              src="./public/icon/Settings-256.png"
+              alt=""
+              class="dropbtn"
+              id="account-action"
+            />
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"
+                ><p>Login</p>
+                <img src="./public/icon/Login-256 (1).png" alt=""
+              /></a>
+              <a href="#"
+                ><p>Sign in</p>
+                <img src="./public/icon/Login-Rounded Up-256 (1).png" alt=""
+              /></a>
+              <a href="#"
+                ><p>Help Center</p>
+                <img src="./public/icon/Help-256.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
 
         <div class="search-box">
           <input type="text" placeholder="Search here..." />
