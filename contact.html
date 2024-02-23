@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SDC Home Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+
     <script src="script.js" defer></script>
     <script src="./js/cotact.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="nav" id="nav">
-        <i class="uil uil-bars navOpenBtn"></i>
+        <div class="menu-holder">
+          <img
+            src="./public/icon/Menu-256.png"
+            alt=""
+            class="uil uil-bars navOpenBtn"
+            id="menuIcon"
+          />
+        </div>
+
         <a href="#" id="page-name-holder">
           <img id="logo" src="./public/sdc_logo_final version.png" alt="" />
         </a>
 
         <ul class="nav-links" id="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
+          <img
+            src="./public/icon/Circled-X-256.png"
+            alt=""
+            class="uil uil-times navCloseBtn"
+            id="navCloseBtn"
+          />
           <li>
             <a href="index.html" class="page-link active">Home</a>
           </li>
@@ -33,10 +43,41 @@
           <li><a href="health.html" class="page-link">Health Benefits</a></li>
           <li><a href="basket.html" class="page-link">Basket</a></li>
         </ul>
+        <div>
+          <div class="nav-icons">
+            <img
+              src="./public/icon/Search-256.png"
+              alt=""
+              class="search-icon"
+              id="searchIcon"
+            />
+            <div class="action-holder">
+              <img
+                onclick="toggleDropdown()"
+                src="./public/icon/Settings-256.png"
+                alt=""
+                class="dropbtn"
+                id="account-action"
+              />
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#"
+                  ><p>Login</p>
+                  <img src="./public/icon/Login-256 (1).png" alt=""
+                /></a>
+                <a href="#"
+                  ><p>Sign in</p>
+                  <img src="./public/icon/Login-Rounded Up-256 (1).png" alt=""
+                /></a>
+                <a href="#"
+                  ><p>Help Center</p>
+                  <img src="./public/icon/Help-256.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
-          <i class="uil uil-search search-icon"></i>
           <input type="text" placeholder="Search here..." />
         </div>
       </nav>
