@@ -38,7 +38,7 @@ body.over-flow-hidden {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 100px;
+  padding: 5px 80px;
   background-color: transparent;
   -webkit-backdrop-filter: blur(20px); /* Add vendor prefix for WebKit */
   backdrop-filter: blur(20px);
@@ -64,8 +64,8 @@ body.over-flow-hidden {
   text-decoration: none;
   padding: 5px;
   cursor: pointer;
-  font-family: "Lemon", serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   color: #eef1f5;
 }
 
@@ -173,7 +173,7 @@ body.over-flow-hidden {
   align-items: center;
   cursor: pointer;
   #account-action {
-    width: 20px;
+    width: 25px;
     height: auto;
   }
   .dropdown-content {
@@ -859,7 +859,7 @@ body.over-flow-hidden {
   /* health section */
 
   #health-section {
-    height: 100vh;
+    height: auto;
     background: linear-gradient(
         to bottom,
         #d5dee7 0%,
@@ -883,7 +883,7 @@ body.over-flow-hidden {
 
   #health-section .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: inherit;
@@ -913,7 +913,8 @@ body.over-flow-hidden {
   #main-section {
     height: 100vh;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     .container {
@@ -1051,10 +1052,10 @@ body.over-flow-hidden {
     }
     .check-out {
       width: 300px;
-      height: 500px;
+      height: auto;
       background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
       border-radius: 20px;
-      padding-top: 20px;
+
       .container {
         padding: 10px;
         display: block;
@@ -1064,23 +1065,24 @@ body.over-flow-hidden {
           justify-content: center;
           button {
             padding: 5px 20px;
-            width: 100%;
+            border: none;
             border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: transparent;
-            border: 1px solid black;
-            transition: all 400ms;
-
+            background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+            transition: all 400ms ease;
+            cursor: pointer;
+            color: white;
             img {
               width: 20px;
               height: 20px;
             }
           }
-          button:hover {
-            background-color: #09203f;
-            color: white;
+          button:hover,
+          button:active {
+            justify-content: space-around;
+            transform: scale(1.1);
           }
         }
 
@@ -1276,7 +1278,7 @@ body.over-flow-hidden {
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    padding: 100px 0;
+    padding-top: 100px;
     padding-bottom: 20px;
     h3 {
       font-size: 20px;
@@ -1581,7 +1583,7 @@ body.over-flow-hidden {
   }
 
   .nav {
-    padding: 15px 20px;
+    padding: 0px 20px;
     backdrop-filter: none;
   }
   .nav.add-background {
@@ -1837,9 +1839,6 @@ body.over-flow-hidden {
     /* health section end mobile */
   }
   #basket-page {
-    .nav {
-      background-image: linear-gradient(to right, #434343 0%, black 100%);
-    }
     #main-section {
       height: auto;
       padding: 30px auto;
@@ -1947,13 +1946,8 @@ body.over-flow-hidden {
     }
   }
   #health-page {
-    .nav {
-      background-image: linear-gradient(to right, #434343 0%, black 100%);
-    }
-
     #main-section {
       height: auto;
-      padding-bottom: 20px;
       h3 {
         font-size: 16px;
       }
@@ -2005,9 +1999,9 @@ body.over-flow-hidden {
           display: none;
         }
         .boosted-ws {
-          padding: 30px 5px;
+          padding: 10px 5px;
           display: block;
-
+          margin: 0;
           background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
           .img-holder {
             width: 300px;
@@ -2025,12 +2019,9 @@ body.over-flow-hidden {
     }
   }
   #shop-page {
-    .nav {
-      background-image: linear-gradient(to right, #434343 0%, black 100%);
-    }
-
     #main-section {
-      padding-top: 100px;
+      padding-top: 70px;
+      padding-bottom: 20px;
       .container {
         margin: 0;
         margin-bottom: 0px;
