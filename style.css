@@ -306,6 +306,7 @@ body.over-flow-hidden {
       a {
         img {
           width: 17px;
+          padding: 20px;
         }
       }
     }
@@ -717,14 +718,12 @@ body.over-flow-hidden {
   #promotion-section .container {
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
   #promotion-section .container .image-holder {
-    width: 50%;
     height: 300px;
-    margin: 20px auto;
     perspective: 1400px;
     transform-style: preserve-3d;
   }
@@ -911,7 +910,7 @@ body.over-flow-hidden {
 
 #basket-page {
   #main-section {
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     padding-top: 70px;
     padding-bottom: 20px;
@@ -1280,6 +1279,9 @@ body.over-flow-hidden {
     font-weight: 400;
     padding-top: 100px;
     padding-bottom: 20px;
+    .no-border {
+      border: none;
+    }
     h3 {
       font-size: 20px;
       word-spacing: 2px;
@@ -1294,14 +1296,20 @@ body.over-flow-hidden {
         justify-content: space-around;
         align-items: center;
         .content {
+          -webkit-box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+          -moz-box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           cursor: default;
-          width: 450px;
+          width: 600px;
           border-radius: 20px;
           padding: 10px;
           transition: all 800ms;
         }
         .video-holder {
+          width: 600px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
           .video {
             width: 430px;
             height: 300px;
@@ -1512,7 +1520,7 @@ body.over-flow-hidden {
       min-width: 0;
       height: 30px;
       line-height: 1;
-
+      margin: 0;
       &:focus {
         outline: none;
       }

@@ -84,8 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
         type="number"
         name="product-qty"
         min="0"
-        max="10"
+        max="100"
         value="1"
+        step="0.01"
       />
       <button class="qty-count" data-action="add" type="button">
         <img src="./public/icon/Plus-256.png" alt="" />
